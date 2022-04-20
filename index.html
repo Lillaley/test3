@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta name="theme-color" id="statusBar" content="#009688" >
+    <meta name="theme-color" id="statusBar" content="#009688">
     <meta name="HandheldFriendly" content="true">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="description" content="Tool for compression and change extension name for images">
@@ -24,21 +25,22 @@
 
     <title></title>
 </head>
+
 <body id="body">
-    
+
     <!-- Header -->
     <div class="head">
         <header>
             <div class="main">
                 <h1>Huffman Algorithm</h1>
             </div>
-                
+
             <div style="margin-top: 4%;">
 
                 <button onclick="change(this)">Text</button>
-                <button onclick="change(this)">Image</button> 
+                <button onclick="change(this)">Image</button>
 
-            </div>                
+            </div>
         </header>
     </div>
 
@@ -50,19 +52,19 @@
 
             <div class="textin">
                 <!-- Ввод -->
-                
+
                 <div class="input">
                     <h3 style="color: white;">Input/Output</h3>
                     <textarea name="input" id='message_box' class="in" style="height: 250px;"></textarea>
                 </div>
-                
+
             </div>
 
             <div style="margin-top: 3%;" class="but">
-                <button onclick="textHuffman()">Encode</button> 
-                <button onclick="textHuffmanUndo()">Decode</button> 
+                <button onclick="textHuffman()">Encode</button>
+                <button onclick="textHuffmanUndo()">Decode</button>
             </div>
-            
+
 
         </div>
     </div>
@@ -74,64 +76,63 @@
         <div id='wrapper-flex-box-contain'>
 
             <div id='flex-box-contain'>
-        
-                 <div id='first-view' class='flex-child first-flex-child' style="text-align: center;">
-        
-                  <h3>Image Compressor</h3><br />
-        
-                     <span class='button next-button' id='go-to-second-slide'>Start</span>
-                 </div>
-        
-              <div id='second-view' class='flex-child'>
-        
-                  <div id='area-img-selected'>
-                    <p>No overview yet</p>
-                  </div>
-        
-                  <label for='select-file' class="button large-button">Choose an image</label>
-                  <input type='file' class='inputfile' id='select-file' accept="image/png, image/jpeg, image/jpg" />
-                  <span class="button large-button" id='start-compression'>Start compression</span>
-        
-              </div>
-        
-              <div id="third-view" class="flex-child">
-                <p>The compression has been successfully completed, you can download your new image now!</p>
-                <a href="" class="button large-button" id='download-image' download="">Download your new image</a>
-                  <div id='footer-third-view'>
-                    <p id='back-to-start'>Back to start</p>
-                  </div>
-        
+
+                <div id='first-view' class='flex-child first-flex-child' style="text-align: center;">
+
+                    <h3>Image Compressor</h3><br />
+
+                    <span class='button next-button' id='go-to-second-slide'>Start</span>
                 </div>
-        
-              </div>
-        
+
+                <div id='second-view' class='flex-child'>
+
+                    <div id='area-img-selected'>
+                        <p>No overview yet</p>
+                    </div>
+
+                    <label for='select-file' class="button large-button">Choose an image</label>
+                    <input type='file' class='inputfile' id='select-file' accept="image/png, image/jpeg, image/jpg" />
+                    <span class="button large-button" id='start-compression'>Start compression</span>
+
+                </div>
+
+                <div id="third-view" class="flex-child">
+                    <p>The compression has been successfully completed, you can download your new image now!</p>
+                    <a href="" class="button large-button" id='download-image' download="">Download your new image</a>
+                    <div id='footer-third-view'>
+                        <p id='back-to-start'>Back to start</p>
+                    </div>
+
+                </div>
+
             </div>
+
+        </div>
     </div>
-    
-    
-    
-        
+
+
 
     <!-- Footer -->
     <div>
-        <footer  style="background-color: rgb(59, 59, 59); height: 130px">
+        <footer style="background-color: rgb(59, 59, 59); height: 130px">
             <div style="text-align: center;">
                 <h3 style="color: rgb(255, 255, 255); font-size: 3rem;">Is our service convenient?</h3>
-                
+
 
                 <!-- иконки -->
                 <div style="margin-top: 1%;">
                     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa-solid fa-heart" style="color: rgb(255, 121, 248); padding: 0 5%; font-size: 2rem;"></i></a>
-                    <i class="fa-solid fa-heart-crack" style="color: rgb(255, 121, 248); padding: 0 5%; font-size: 2rem;"></i>  
+                    <i class="fa-solid fa-heart-crack" style="color: rgb(255, 121, 248); padding: 0 5%; font-size: 2rem;"></i>
                 </div>
-                
-                
+
+
                 <!-- маленькая просьба -->
                 <p style="font-size: 10px; color: white; margin-top: 2%">pls give us 100%</p>
             </div>
-        </footer> 
+        </footer>
     </div>
 
 </body>
-    <script type='module' src='js/index.js'></script>
+<script type='module' src='js/index.js'></script>
+
 </html>
